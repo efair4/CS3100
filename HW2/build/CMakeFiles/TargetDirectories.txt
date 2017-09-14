@@ -1,0 +1,3 @@
+/home/pi/School/HW2/build/CMakeFiles/edit_cache.dir
+/home/pi/School/HW2/build/CMakeFiles/rebuild_cache.dir
+/home/pi/School/HW2/build/CMakeFiles/HW2.dir
