@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -g0 -O3 -Wall -Wextra   CMakeFiles/HW2.dir/main.cpp.o CMakeFiles/HW2.dir/compute-fib.cpp.o CMakeFiles/HW2.dir/compute-e.cpp.o CMakeFiles/HW2.dir/compute-pi.cpp.o  -o HW2 

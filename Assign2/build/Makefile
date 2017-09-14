@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/School/HW2
+CMAKE_SOURCE_DIR = /home/pi/School/Repos/CS3100/Assign2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/School/HW2/build
+CMAKE_BINARY_DIR = /home/pi/School/Repos/CS3100/Assign2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/School/HW2/build/CMakeFiles /home/pi/School/HW2/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/School/Repos/CS3100/Assign2/build/CMakeFiles /home/pi/School/Repos/CS3100/Assign2/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/School/HW2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/School/Repos/CS3100/Assign2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HW2
+# Target rules for targets named Assign2
 
 # Build rule for target.
-HW2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HW2
-.PHONY : HW2
+Assign2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Assign2
+.PHONY : Assign2
 
 # fast build rule for target.
-HW2/fast:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/build
-.PHONY : HW2/fast
+Assign2/fast:
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/build
+.PHONY : Assign2/fast
 
 compute-e.o: compute-e.cpp.o
 
@@ -129,7 +129,7 @@ compute-e.o: compute-e.cpp.o
 
 # target to build an object file
 compute-e.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-e.cpp.o
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-e.cpp.o
 .PHONY : compute-e.cpp.o
 
 compute-e.i: compute-e.cpp.i
@@ -138,7 +138,7 @@ compute-e.i: compute-e.cpp.i
 
 # target to preprocess a source file
 compute-e.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-e.cpp.i
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-e.cpp.i
 .PHONY : compute-e.cpp.i
 
 compute-e.s: compute-e.cpp.s
@@ -147,7 +147,7 @@ compute-e.s: compute-e.cpp.s
 
 # target to generate assembly for a file
 compute-e.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-e.cpp.s
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-e.cpp.s
 .PHONY : compute-e.cpp.s
 
 compute-fib.o: compute-fib.cpp.o
@@ -156,7 +156,7 @@ compute-fib.o: compute-fib.cpp.o
 
 # target to build an object file
 compute-fib.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-fib.cpp.o
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-fib.cpp.o
 .PHONY : compute-fib.cpp.o
 
 compute-fib.i: compute-fib.cpp.i
@@ -165,7 +165,7 @@ compute-fib.i: compute-fib.cpp.i
 
 # target to preprocess a source file
 compute-fib.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-fib.cpp.i
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-fib.cpp.i
 .PHONY : compute-fib.cpp.i
 
 compute-fib.s: compute-fib.cpp.s
@@ -174,7 +174,7 @@ compute-fib.s: compute-fib.cpp.s
 
 # target to generate assembly for a file
 compute-fib.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-fib.cpp.s
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-fib.cpp.s
 .PHONY : compute-fib.cpp.s
 
 compute-pi.o: compute-pi.cpp.o
@@ -183,7 +183,7 @@ compute-pi.o: compute-pi.cpp.o
 
 # target to build an object file
 compute-pi.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-pi.cpp.o
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-pi.cpp.o
 .PHONY : compute-pi.cpp.o
 
 compute-pi.i: compute-pi.cpp.i
@@ -192,7 +192,7 @@ compute-pi.i: compute-pi.cpp.i
 
 # target to preprocess a source file
 compute-pi.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-pi.cpp.i
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-pi.cpp.i
 .PHONY : compute-pi.cpp.i
 
 compute-pi.s: compute-pi.cpp.s
@@ -201,7 +201,7 @@ compute-pi.s: compute-pi.cpp.s
 
 # target to generate assembly for a file
 compute-pi.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/compute-pi.cpp.s
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/compute-pi.cpp.s
 .PHONY : compute-pi.cpp.s
 
 main.o: main.cpp.o
@@ -210,7 +210,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -219,7 +219,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -228,7 +228,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Assign2.dir/build.make CMakeFiles/Assign2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -239,7 +239,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... HW2"
+	@echo "... Assign2"
 	@echo "... compute-e.o"
 	@echo "... compute-e.i"
 	@echo "... compute-e.s"

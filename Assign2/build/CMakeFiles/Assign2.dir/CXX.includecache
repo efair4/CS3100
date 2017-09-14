@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/School/Repos/CS3100/Assign2/compute-e.cpp
+compute-e.hpp
+/home/pi/School/Repos/CS3100/Assign2/compute-e.hpp
+
+/home/pi/School/Repos/CS3100/Assign2/compute-e.hpp
+
+/home/pi/School/Repos/CS3100/Assign2/compute-fib.cpp
+compute-fib.hpp
+/home/pi/School/Repos/CS3100/Assign2/compute-fib.hpp
+
+/home/pi/School/Repos/CS3100/Assign2/compute-fib.hpp
+
+/home/pi/School/Repos/CS3100/Assign2/compute-pi.cpp
+compute-pi.hpp
+/home/pi/School/Repos/CS3100/Assign2/compute-pi.hpp
+cmath
+-
+
+/home/pi/School/Repos/CS3100/Assign2/compute-pi.hpp
+
+/home/pi/School/Repos/CS3100/Assign2/main.cpp
+iostream
+-
+iomanip
+-
+compute-fib.hpp
+/home/pi/School/Repos/CS3100/Assign2/compute-fib.hpp
+compute-e.hpp
+/home/pi/School/Repos/CS3100/Assign2/compute-e.hpp
+compute-pi.hpp
+/home/pi/School/Repos/CS3100/Assign2/compute-pi.hpp
+
