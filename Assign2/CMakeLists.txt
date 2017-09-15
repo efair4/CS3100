@@ -5,7 +5,7 @@ if (CMAKE_COMPILER_IS_GNUCXX)
 	set(CMAKE_CXX_FLAGS "-std=c++11 -g0 -O3 -Wall -Wextra")
 endif()
 
-add_executable(Assign2
+add_executable(assign2
 	main.cpp
 	compute-fib.hpp
 	compute-fib.cpp
