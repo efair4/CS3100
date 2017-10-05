@@ -1,0 +1,3 @@
+/home/pi/School/Repos/CS3100/Assign3/build/CMakeFiles/edit_cache.dir
+/home/pi/School/Repos/CS3100/Assign3/build/CMakeFiles/rebuild_cache.dir
+/home/pi/School/Repos/CS3100/Assign3/build/CMakeFiles/assign3.dir

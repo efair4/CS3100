@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/School/Repos/CS3100/Assign3/main.cpp
+iomanip
+-
+unistd.h
+-
+stdio.h
+-
+chrono
+-
+sys/wait.h
+-
+sys/types.h
+-
+utilities.hpp
+/home/pi/School/Repos/CS3100/Assign3/utilities.hpp
+
+/home/pi/School/Repos/CS3100/Assign3/utilities.cpp
+utilities.hpp
+/home/pi/School/Repos/CS3100/Assign3/utilities.hpp
+
+/home/pi/School/Repos/CS3100/Assign3/utilities.hpp
+string
+-
+vector
+-
+sstream
+-
+iostream
+-
+cstring
+-
+
