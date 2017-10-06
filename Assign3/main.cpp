@@ -12,18 +12,17 @@ int main() {
 	char** argv;
 	auto totalTime = 0;
 	bool execute;
+	int status;
 
 	while(true) {
 		execute = true;
+		status = 0;
 		std::cout<<"[cmd]: ";
 		std::getline(std::cin,input);
 		argv = split(input);
 		
 		if(argv[0] == NULL) {
 			execute = false;
-		}
-		else {
-			hist.push_back(getCommandString(argv));
 		}
 
 		if(execute && strcmp(argv[0], "^") == 0) {
@@ -41,7 +40,7 @@ int main() {
 		}
 		else if(fork()){	
 			auto start = std::chrono::system_clock::now();
-			wait(NULL);
+			wait(&status);
 			auto end = std::chrono::system_clock::now();
 			auto diff = std::chrono::duration_cast<std::chrono::milliseconds>(end-start);
 			totalTime += diff.count();
@@ -51,11 +50,15 @@ int main() {
 				execvp(argv[0],argv);
 				std::cout<<"Invalid Command"<<std::endl;
 			}
-			exit(0);
+			else {
+				std::cout<<"Invalid Command"<<std::endl;
+			}
+			exit(1);
 		}
-		if(!execute) {
-			std::cout<<"Invalid Command"<<std::endl;
-		}
+
+	  if(status == 0) {
+			hist.push_back(getCommandString(argv));
+  	}	
 	}
 	return 0;
 }

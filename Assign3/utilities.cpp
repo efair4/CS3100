@@ -45,7 +45,7 @@ bool getCommandFromHistory(std::vector<std::string> hist, char** &argv) {
 	bool valid = true;
 	try {
 		num = std::stoi(argv[1]);
-		if(num >= 1 && num < hist.size()) {
+		if(num >= 1 && num <= hist.size()) {
 			argv = split(hist[num-1]);
 		}
 		else {
@@ -54,17 +54,12 @@ bool getCommandFromHistory(std::vector<std::string> hist, char** &argv) {
 	} catch(...) {
 			valid = false;
 	}
-	if(valid && strcmp(argv[0], "^") == 0) {
-		return getCommandFromHistory(hist, argv);
-	}
-	else {
-		return valid;
-	}
+	return valid;
 }
 
 void printHistory(std::vector<std::string> hist) {
 	std::cout<<"------CommandHistory------"<<std::endl;
-	for(int i=0;i<hist.size()-1;i++) {
+	for(int i=0;i<hist.size();i++) {
 		std::cout<<i+1<<" - "<<hist[i]<<std::endl;
 	}
 }
