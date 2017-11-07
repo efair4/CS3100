@@ -41,6 +41,10 @@ cstring
 -
 iomanip
 -
+chrono
+-
+sys/wait.h
+-
 sys/param.h
 -
 unistd.h

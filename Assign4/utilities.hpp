@@ -7,13 +7,16 @@
 #include<iostream>
 #include<cstring>
 #include<iomanip>
+#include<chrono>
+#include<sys/wait.h>
 #include<sys/param.h>
 #include<unistd.h>
 
-char** split(std::string);
-std::string getCommandString(char**);
-int getCommandFromHistory(std::vector<std::string>, char** &);
+std::vector<char**> split(std::string);
+std::string getCommandString(std::vector<char**>);
+int getCommandFromHistory(std::vector<std::string>, char** &, double &);
 void printHistory(std::vector<std::string>);
-int inspectInput(std::vector<std::string>, char** &, double);
+int inspectInput(std::vector<std::string>, char** &, double &);
+int doPipe(std::vector<std::string>, std::vector<char**> &, double &);
 
 #endif

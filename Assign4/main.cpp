@@ -7,27 +7,34 @@
 #include<signal.h>
 #include "utilities.hpp"
 
-void myHandler(int sigID) {
-	std::cout<<"The signal id is: "<<sigID<<std::endl;
+void ctrlCHandler(int sigID) {
+	std::cout<<"\nEnter 'exit' to quit the shell."<<std::endl;
+	std::cout<<"["<<getcwd(NULL,0)<<":] "<<std::flush;
 }
 
 int main() {
 	std::string input;
 	std::vector<std::string> hist;
+	std::vector<char**> argsVec;
 	char** argv;
+	char** argvPipe;
 	double totalTime = 0;
 	int execute;
 	int status;
 
-	while(true) {
-		
-		std::cout<<"["<<getcwd(NULL,0)<<"]: ";
-	//	sighandle_t signal(SIGINT,myHandler);
+	while(true) {		
+		std::cout<<"["<<getcwd(NULL,0)<<":] ";
+	  signal(SIGINT,ctrlCHandler);
 		
 		std::getline(std::cin,input);
-		argv = split(input);
-		
-		execute = inspectInput(hist, argv, totalTime);
+		argsVec = split(input);
+		argv = argsVec[0];
+		if(argsVec.size() == 2) {
+			execute = doPipe(hist, argsVec, totalTime);
+		}
+		else {		
+			execute = inspectInput(hist, argv, totalTime);
+		}
 
 		if(fork()){	
 			auto start = std::chrono::system_clock::now();
@@ -48,7 +55,7 @@ int main() {
 		}
 		
 	  if(execute == 1 && status == 0 || execute == 3) {
-			hist.push_back(getCommandString(argv));
+			hist.push_back(getCommandString(argsVec));
   	}
 		else if(execute == 2) {
 			std::cout<<"Invalid Command"<<std::endl;

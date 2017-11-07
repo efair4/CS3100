@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -lpthread -O3    CMakeFiles/assign5.dir/main.cpp.o CMakeFiles/assign5.dir/ComputePiDigit.cpp.o CMakeFiles/assign5.dir/Queue.cpp.o CMakeFiles/assign5.dir/UnorderedMap.cpp.o  -o assign5 -rdynamic 
